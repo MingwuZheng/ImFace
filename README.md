@@ -77,7 +77,7 @@ For evaluating chamfer distance and f1_score of testing set with trained model, 
 ```
 python run/fit.py [--config file's name]
 ```
-please modify the `load_path`  in config file with your checkpoint's path. Results can be found in `result/<timestamp>/fit`.
+Please modify the `load_path`  in config file with your checkpoint's path. Results can be found in `result/<timestamp>/fit`.
 
 ### Fit with one 3D face
 For fitting one sample, which is generated from FaceScape <a href="https://nbviewer.org/github/zhuhao-nju/facescape/blob/master/toolkit/demo_bilinear_basic.ipynb" target="_blank">toolkit</a>, run:
