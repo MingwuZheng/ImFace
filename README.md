@@ -69,8 +69,8 @@ Our trained model can be downloaded as follow:
 
 | Trained Model            | Description  |
 |-------------------|-------------------------------------------------------------|
-| <a href="" target="_blank">ImFace(SE3)</a> (coming soon) | deformation with a SE(3) field|
-| <a href="" target="_blank">ImFace(translation)</a> (coming soon) | common translation deformation |
+| <a href="https://drive.google.com/drive/folders/1wKvWZHhuLO6ISc0jML8DfM_u4de2m2-y?usp=sharing" target="_blank">ImFace(SE3)</a> | deformation with a SE(3) field|
+| <a href="https://drive.google.com/drive/folders/1QIkyvSdNmwPudC2cm4se-UoBNTh5wBjU?usp=sharing" target="_blank">ImFace(translation)</a> | common translation deformation |
 
 ### Evaluation
 For evaluating chamfer distance and f1_score of testing set with trained model, run:
