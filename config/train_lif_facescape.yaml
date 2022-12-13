@@ -5,12 +5,12 @@ reload: False
 load_path: ''
 gpus: '3,4,5'
 
-train_list: 'config/list/facescape_test.txt'
+train_list: 'config/list/train_facescape_355.txt'
 exp_types: [ 1,2,3,4,7,10,11,12,13,14,15,16,17,19,20 ] # 15
 keypoint_type: 'full'
 sample_func: 'random_sample_full'
-batch_size: 96 # 96
-log_frequency: 50
+batch_size: 72 # 96
+log_frequency: 300
 test_obj_num: 2
 
 # Testing Parameters:

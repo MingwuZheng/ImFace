@@ -109,11 +109,11 @@ class NormalDataset(Dataset):
                 bnds.append([float(key_point[0]), float(key_point[1]), float(key_point[2])])
         bnds = get_keypoints(bnds, self.keypoint_type)
 
-        surf_points = torch.tensor(np.load(surf_pcl_file)).float()
-        surf_normals = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_surf_nor.'))).float()
-        free_points = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_free_pcl.'))).float()
-        free_points_grad = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_free_grd.'))).float()
-        free_points_sdfs = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_free_sdf.'))).float()
+        surf_points = torch.tensor(np.load(surf_pcl_file).astype(np.float32)).float()
+        surf_normals = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_surf_nor.')).astype(np.float32)).float()
+        free_points = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_free_pcl.')).astype(np.float32)).float()
+        free_points_grad = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_free_grd.')).astype(np.float32)).float()
+        free_points_sdfs = torch.tensor(np.load(surf_pcl_file.replace('_surf_pcl.', '_free_sdf.')).astype(np.float32)).float()
 
         points = torch.cat([surf_points, free_points], dim=0)
         sdfs = torch.cat([torch.zeros(len(surf_points)), free_points_sdfs])

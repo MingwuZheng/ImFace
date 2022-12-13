@@ -142,12 +142,6 @@ def main(args):
     )
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, config.lr_interval, config.lr_factor)
 
-    # reload_path = 'demo/fit/2022-12-11_17-57/'
-
-    # envs = torch.load(os.path.join(reload_path, 'envs_last.pth'), map_location='cpu')
-    # id_embedding = envs['id_embedding'].to(device)
-    # exp_embedding = envs['exp_embedding'].to(device)
-
     with tqdm(total=config.epoch) as tqdm_bar:
         for epoch in range(1, config.epoch + 1):
             tqdm_bar.set_description('{} Epoch {:>4d}/{}'.format(timestr, epoch, config.epoch))
