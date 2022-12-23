@@ -14,7 +14,7 @@ from prefetch_generator import BackgroundGenerator
 
 from utils import fileio, common, summary
 from utils.sample import SAMPLE_FUNCTIONS
-from model import lif_net_inter
+from model import imface
 from data_loader.NormalDataset import NormalDataset
 
 random.seed(42)
@@ -99,7 +99,7 @@ def main(args):
 
     template_kpts = train_data.get_template_kpts()
     # init model
-    decoder = lif_net_inter.LIF(config.network_params, train_id_num, len(config.exp_types), 5,
+    decoder = imface.ImFace(config.network_params, train_id_num, len(config.exp_types), 5,
                              template_kpts)
 
     # load from checkpoint

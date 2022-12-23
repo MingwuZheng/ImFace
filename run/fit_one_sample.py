@@ -16,7 +16,7 @@ import argparse
 
 from utils import fileio, common, summary
 from utils.sample import SAMPLE_FUNCTIONS
-from model import lif_net_inter
+from model import imface
 from data_loader.OneSampleDataset import NormalDataset
 
 random.seed(42)
@@ -104,7 +104,7 @@ def main(args):
 
     template_kpts = fit_data.get_template_kpts()
 
-    decoder = lif_net_inter.LIF(config.network_params, len(id2idx), len(exp2idx), 5,
+    decoder = imface.ImFace(config.network_params, len(id2idx), len(exp2idx), 5,
                                 template_kpts)
 
     reload_path = config.load_path

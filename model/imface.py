@@ -137,7 +137,7 @@ def warp(xyz, deformation, warp_type):
 
 
 # noinspection DuplicatedCode
-class LIF(nn.Module):
+class ImFace(nn.Module):
     def __init__(self, config, id_num, exp_num, kpt_num, template_kpts=None, initial_std=0.01):
         super().__init__()
         self.kpt_num = kpt_num
