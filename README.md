@@ -2,6 +2,9 @@
 
 ###  [Paper](https://arxiv.org/abs/2203.14510) | [Data](https://facescape.nju.edu.cn/)
 
+<img src="./media/1.gif" style="zoom:60%;" ><img src="./media/2.gif" style="zoom:60%;"><img src="./media/3.gif" style="zoom:60%;"><img src="./media/4.gif" style="zoom:60%;"><img src="./media/5.gif" style="zoom:60%;">
+
+
 Official code for CVPR 2022 paper ImFace: A Nonlinear 3D Morphable Face Model with Implicit Neural Representations.
 
 The paper presents a novel 3D morphable face model, namely ImFace, to learn a nonlinear and continuous space with implicit neural representations.
