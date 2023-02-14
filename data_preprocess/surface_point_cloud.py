@@ -303,7 +303,7 @@ def sample_on_surface(mesh, number_of_points=500000, surface_point_method='scan'
     surface_points_num = int(number_of_points * rate)
     freespace_points_num = number_of_points - surface_points_num
 
-    surface_points = surface_pcl.sample_on_surface(number_of_points, surface_point_method == 'scan', sign_method,
+    surface_points = surface_pcl.sample_on_surface(surface_points_num, surface_point_method == 'scan', sign_method,
                                                    normal_sample_count, return_gradients)
     freespace_points = surface_pcl.sample_sdf_uni(freespace_points_num, sign_method,
                                                   normal_sample_count, return_gradients)
