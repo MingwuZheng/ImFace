@@ -92,15 +92,35 @@ python run/fit_one_sample.py [--config file's name]
 ```
 Please modify the `load_path` in config file with your checkpoint's path and make sure `warp_type` matches the trained model. Results can be found in `demo/fit`.
 
+### Related Projects
+
+<a href="https://github.com/aejion/NeuFace" target="_blank">NeuFace: Realistic 3D Neural Face Rendering from Multi-view Images (CVPR 2023)</a>
+
+<a href="https://arxiv.org/abs/2312.04028" target="_blank">ImFace++: A Sophisticated Nonlinear 3D Morphable Face Model with Implicit Neural Representations (code coming soon)</a>
+
 
 ## Citation
 If you find our work useful in your research, please consider citing:
 
 	@inproceedings{zheng2022imface,
-	title={ImFace: A Nonlinear 3D Morphable Face Model with Implicit Neural Representations},
-	author={Zheng, Mingwu and Yang, Hongyu and Huang, Di and Chen, Liming},
-	booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-	pages={20343--20352},
-	year={2022}
+	    title={ImFace: A Nonlinear 3D Morphable Face Model with Implicit Neural Representations},
+	    author={Zheng, Mingwu and Yang, Hongyu and Huang, Di and Chen, Liming},
+	    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+	    pages={20343--20352},
+	    year={2022}
 	}
+ 	@inproceedings{zheng2023neuface,
+	  title={NeuFace: Realistic 3D Neural Face Rendering from Multi-view Images},
+	  author={Zheng, Mingwu and Zhang, Haiyu and Yang, Hongyu and Huang, Di},
+	  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+	  pages={16868--16877},
+	  year={2023}
+	}
+	 @article{zheng2023imface++,
+	  title={ImFace++: A Sophisticated Nonlinear 3D Morphable Face Model with Implicit Neural Representations},
+	  author={Zheng, Mingwu and Zhang, Haiyu and Yang, Hongyu and Chen, Liming and Huang, Di},
+	  journal={arXiv preprint arXiv:2312.04028},
+	  year={2023}
+	}
+ 	
 
