@@ -103,11 +103,11 @@ Please modify the `load_path` in config file with your checkpoint's path and mak
 If you find our work useful in your research, please consider citing:
 
 	@inproceedings{zheng2022imface,
-	    title={ImFace: A Nonlinear 3D Morphable Face Model with Implicit Neural Representations},
-	    author={Zheng, Mingwu and Yang, Hongyu and Huang, Di and Chen, Liming},
-	    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-	    pages={20343--20352},
-	    year={2022}
+	  title={ImFace: A Nonlinear 3D Morphable Face Model with Implicit Neural Representations},
+	  author={Zheng, Mingwu and Yang, Hongyu and Huang, Di and Chen, Liming},
+	  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+	  pages={20343--20352},
+	  year={2022}
 	}
  	@inproceedings{zheng2023neuface,
 	  title={NeuFace: Realistic 3D Neural Face Rendering from Multi-view Images},
