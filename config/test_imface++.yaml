@@ -1,0 +1,16 @@
+# Generating Parameters:
+SEED: 42
+LOAD_PATH: './result/imface++_neutral'
+RESUME: './result/imface++_neutral/test/latest/pth/envs_last.pth'
+
+FIT_LIST: './config/list/test_facescape_20.txt'
+TRAIN_LIST: './config/list/train_facescape_832.txt'
+EXP_TYPES: [ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 ]
+VOX_RESOLUTION: 256
+GPUS: '0'
+BATCH_SPLIT: 20000 # To achieve faster generation, consider increasing this value.
+
+INITIAL_STD: 0.01
+
+
+
