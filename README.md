@@ -21,6 +21,16 @@ conda activate imface
 pip install -r requirement.txt
 ```
 
+## [2023.12] ImFace++
+Release the ImFace++ trained on FaceScape dataset. We propose a refinement displacement field which can faithfully encode high-frequency details, thereby enhancing the representation capabilities of ImFace++. ImFace++ can reconstruct and synthesize 3D faces spanning a wide range of facial expressions and it renders more vivid results. 
+
+<img src="./media/6.gif" width=20%><img src="./media/7.gif" width=20%><img src="./media/8.gif" width=20%><img src="./media/9.gif" width=20%><img src="./media/10.gif" width=20%>
+
+Technical details of ImFace++ can be found in this research paper:
+<a href="https://arxiv.org/abs/2312.04028" target="_blank">ImFace++: A Sophisticated Nonlinear 3D Morphable Face Model with Implicit Neural Representations</a>
+
+Checkout to the branch <a href="https://github.com/MingwuZheng/ImFace/tree/imface%2B%2B" target="_blank">ImFace++</a> for more details of generation and fitting.
+
 ## Usage
 ### Data
 We sample 5,323 face scans from 355 persons with 15 expressions from the <a href="https://facescape.nju.edu.cn/" target="_blank">FaceScape Dataset</a>. 
